@@ -1,8 +1,5 @@
-import { useState } from "react";
+export default function ChangeTodo ({title, onSave, count, text, onInputTextChange}) {
 
-function ChangeTodo ({title, onSave, count, text, onInputTextChange}) {
-
-	
 	return (
 		<form className="my_form_list"
 			onClick={(e) => e.stopPropagation()}>
@@ -16,5 +13,3 @@ function ChangeTodo ({title, onSave, count, text, onInputTextChange}) {
 		</form>
 	)
 }
-
-export default ChangeTodo;

@@ -1,9 +1,6 @@
 import { useState } from "react";
 
-
-
-
-function TodoForm ({onAddBtnClick}) {
+export default function TodoForm ({onAddBtnClick}) {
 	const [title, setTitle] = useState('');
 
 	const onInputChange = (e) => {
@@ -32,5 +29,3 @@ function TodoForm ({onAddBtnClick}) {
 	
 	)
 }
-
-export default TodoForm;
